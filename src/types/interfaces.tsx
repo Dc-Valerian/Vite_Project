@@ -1,11 +1,11 @@
 export interface iButton{
-        title:string;
+        buttontitle:string;
         bg:string;
         c:string
 }
 export interface iCard{
         title:string;
-      
+        buttontitle:string;
 }
 export interface iInput{
         title:string;

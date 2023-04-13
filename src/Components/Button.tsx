@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import { iButton } from '../types'
 
 
-const Button:React.FC<iButton> = ({title,c,bg}) => {
+const Button:React.FC<iButton> = ({buttontitle,c,bg}) => {
   return (
     <div>
         <Main bg={bg} c={c}>
             <Text>
-                {title}
+                {buttontitle}
             </Text>
         </Main>
     </div>
