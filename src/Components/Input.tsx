@@ -3,13 +3,27 @@ import styled from 'styled-components'
 import { iInput } from '../types'
 
 const InputData:React.FC<iInput> = ({title}) => {
+
+    const [sign,setSign] = React.useState(false)
+    const [request,setRequest] = React.useState(false)
+
   return (
     <div>
           <Field>
                 <Form>
-                    <Input
-                    placeholder={title}
-                    />
+                <Input
+                        placeholder={title}
+                        />
+                    {
+                        sign ?  <Input
+                        placeholder={title}
+                        /> :null
+                    }
+                    {
+                        request ?  <Input
+                        placeholder={title}
+                        /> :null
+                    }
                 </Form>
             </Field>
     </div>
@@ -29,7 +43,8 @@ margin: 5px 0;
 
 const Form = styled.form`
 width: 100%;
-
+display: flex;
+flex-direction: column;
 `
 
 

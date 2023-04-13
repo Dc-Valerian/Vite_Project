@@ -11,11 +11,8 @@ const Card:React.FC<iCard> = ({title,buttontitle,onClick}) => {
             <Text>
                 {title}
             </Text>
-          <InputData title='Name'/>
-          <InputData title='Email'/>
-          <InputData title='Password'/>
-
-
+          <InputData title='Name' />
+        
           <Button buttontitle={buttontitle} bg='#000269' c='white'
           onClick={onClick}
           />
