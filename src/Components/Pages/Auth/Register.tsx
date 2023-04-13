@@ -6,7 +6,9 @@ const Register = () => {
   return (
     <div>
         <Main>
-        <Card buttontitle='Sign Up' title='Register'/>
+        <Card buttontitle='Sign Up' title='Register' onClick={()=>{
+            console.log("Valerian");
+        }}/>
         </Main>
     </div>
   )

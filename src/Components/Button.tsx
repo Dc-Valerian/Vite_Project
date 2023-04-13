@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import { iButton } from '../types'
 
 
-const Button:React.FC<iButton> = ({buttontitle,c,bg}) => {
+const Button:React.FC<iButton> = ({buttontitle,c,bg,onClick}) => {
   return (
     <div>
-        <Main bg={bg} c={c}>
+        <Main bg={bg} c={c} 
+        onClick={onClick}
+        >
             <Text>
                 {buttontitle}
             </Text>
