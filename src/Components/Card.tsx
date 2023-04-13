@@ -11,7 +11,12 @@ const Card:React.FC<iCard> = ({title,buttontitle,onClick}) => {
             <Text>
                 {title}
             </Text>
-          <InputData title='Name' />
+          <InputData
+           title='OTP'
+            // title1='Password'
+             sign={false} 
+             request={false}
+             />
         
           <Button buttontitle={buttontitle} bg='#000269' c='white'
           onClick={onClick}

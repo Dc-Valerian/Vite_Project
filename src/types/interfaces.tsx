@@ -12,5 +12,8 @@ export interface iCard{
 }
 export interface iInput{
         title:string;
-     
+        title1?:string;
+        title2?:string;
+        sign:boolean;
+        request:boolean;
 }
