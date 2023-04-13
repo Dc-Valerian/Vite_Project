@@ -48,7 +48,7 @@ font-size: 40px;
 
 const Main = styled.div`
 width: 400px;
-min-height: 600px;
+min-height: 400px;
 border-radius: 10px;
 border-color: silver;
 border: 1px solid gray;

@@ -26,7 +26,7 @@ export default SignIn
 
 const Main = styled.div`
 display: flex;
-height: 100vh;
+height: calc(100vh - 300px);
 width: 100%;
 justify-content: center;
 align-items: center;
