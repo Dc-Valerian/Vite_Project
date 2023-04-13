@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <Button title='Button' c='white' bg='darkorange' />
-      <Card/>
+      <Card title=''/>
     </div>
   )
 }

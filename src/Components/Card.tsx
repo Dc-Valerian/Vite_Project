@@ -1,16 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import { iCard } from '../types'
+import InputData from './Input'
 
-const Card = () => {
+const Card:React.FC<iCard> = ({title}) => {
   return (
     <div>
         <Main>
             <Text>
-                Text
+                {title}
             </Text>
-            <Field>
-                Field
-            </Field>
+          <InputData title='Name'/>
+          <InputData title='Email'/>
+          <InputData title='Password'/>
         </Main>
     </div>
   )
@@ -18,10 +20,12 @@ const Card = () => {
 
 export default Card
 
-const Field = styled.div``
 
 const Text = styled.div`
-
+margin-top: 40px;
+font-weight: 500;
+text-transform: uppercase;
+font-size: 40px;
 `
 
 const Main = styled.div`
