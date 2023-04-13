@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { iButton, iCard } from '../types'
 import InputData from './Input'
 import Button from './Button'
+import {Link} from "react-router-dom"
 
 const Card:React.FC<iCard> = ({
     title,
@@ -12,7 +13,16 @@ const Card:React.FC<iCard> = ({
     inputTitle1,
     inputTitle2,
     sign,
-    request
+    request,
+    path,
+    text,
+  route,
+    path1,
+    text1,
+  route1,
+  call
+  
+
 }) => {
   return (
     <div>
@@ -24,13 +34,27 @@ const Card:React.FC<iCard> = ({
            inputTitle={inputTitle}
            inputTitle1={inputTitle1}
            inputTitle2={inputTitle2}
-             sign={false} 
-             request={false}
+             sign={sign} 
+             request={request}
+             
              />
         
           <Button buttontitle={buttontitle} bg='#000269' c='white'
           onClick={onClick}
           />
+
+          <Content>
+          {text} <Span to={`${path}`}>
+                {route}
+            </Span>
+          </Content>
+          {
+            call ?   <Content>
+            {text1} <Span to={`${path1}`}>
+                  {route1}
+              </Span>
+            </Content> :null
+          }
         </Main>
     </div>
   )
@@ -38,6 +62,22 @@ const Card:React.FC<iCard> = ({
 
 export default Card
 
+
+const Span = styled(Link)`
+margin-left: 5px;
+font-weight: bolder;
+transition: all 350ms;
+text-decoration: none;
+:hover{
+    cursor: pointer;
+    transform: scale(1.007);
+}
+`
+
+const Content = styled.div`
+display: flex;
+margin-top: 10px;
+`
 
 const Text = styled.div`
 margin-top: 40px;

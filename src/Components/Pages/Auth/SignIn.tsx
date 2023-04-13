@@ -7,13 +7,20 @@ const SignIn = () => {
     <div>
         <Main>
         <Card 
-        buttontitle='SignIn' 
+        buttontitle='Sign In' 
         title='Sign In'
         inputTitle="Email"
         inputTitle1="Password"
         inputTitle2="ConfirmPassword"
         sign={true}
         request={false}
+        text="Don't Have An Account !!"
+        route="Create One Now"
+        path='/SignIn'
+        text1="Forget Your Password"
+        route1="Create One Now"
+        path1='/Reset'
+        call={true}
          onClick={()=>{
             console.log("Valerian");
         }}/>
@@ -26,7 +33,7 @@ export default SignIn
 
 const Main = styled.div`
 display: flex;
-height: calc(100vh - 300px);
+height: calc(100vh - 270px);
 width: 100%;
 justify-content: center;
 align-items: center;

@@ -8,11 +8,13 @@ const InputData:React.FC<iInput> = ({
     inputTitle2,
     sign,
     request,
+    email,
+    password,
+    userName
    
 }) => {
 
-    // const [sign,setSign] = React.useState(true)
-    // const [request,setRequest] = React.useState(false)
+    const [email,setEmail] = React.useState("")
 
   return (
     <div>
@@ -20,6 +22,10 @@ const InputData:React.FC<iInput> = ({
                 <Form>
                 <Input
                         placeholder={inputTitle}
+                        value={email}
+                        onChange={(e:any)=>{
+                            setEmail(e.target.value)
+                        }}
                         />
                     {
                         sign ?  <Input
