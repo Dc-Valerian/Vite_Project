@@ -5,9 +5,9 @@ import Card from './Components/Card'
 const App = () => {
   return (
     <div>
-      <Button title='Button' c='white' bg='darkorange' />
+      {/* <Button title='Button' c='white' bg='darkorange' /> */}
       <Card title='Text'/>
-      <Card title='Text2'/>
+      {/* <Card title='Text2'/> */}
     </div>
   )
 }

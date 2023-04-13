@@ -33,6 +33,7 @@ display: flex;
 align-items: center;
 justify-content:center;
 transition:all 350ms;
+margin:10px;
 
 :hover{
     cursor:pointer;

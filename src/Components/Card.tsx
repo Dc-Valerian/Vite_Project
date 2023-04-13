@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { iCard } from '../types'
 import InputData from './Input'
+import Button from './Button'
 
 const Card:React.FC<iCard> = ({title}) => {
   return (
@@ -13,6 +14,9 @@ const Card:React.FC<iCard> = ({title}) => {
           <InputData title='Name'/>
           <InputData title='Email'/>
           <InputData title='Password'/>
+
+
+          <Button title='Sign In' bg='#000269' c='white'/>
         </Main>
     </div>
   )
