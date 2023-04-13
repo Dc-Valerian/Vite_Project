@@ -8,12 +8,18 @@ export interface iCard{
         title:string;
         buttontitle:string;
         onClick:()=>void;
+
+        inputTitle:string;
+        inputTitle1?:string;
+        inputTitle2?:string;
+        sign:boolean;
+        request:boolean;
         
 }
 export interface iInput{
-        title:string;
-        title1?:string;
-        title2?:string;
+    inputTitle:string;
+    inputTitle1?:string;
+    inputTitle2?:string;
         sign:boolean;
         request:boolean;
 }

@@ -4,7 +4,16 @@ import { iButton, iCard } from '../types'
 import InputData from './Input'
 import Button from './Button'
 
-const Card:React.FC<iCard> = ({title,buttontitle,onClick}) => {
+const Card:React.FC<iCard> = ({
+    title,
+    buttontitle,
+    onClick,
+    inputTitle,
+    inputTitle1,
+    inputTitle2,
+    sign,
+    request
+}) => {
   return (
     <div>
         <Main>
@@ -12,8 +21,9 @@ const Card:React.FC<iCard> = ({title,buttontitle,onClick}) => {
                 {title}
             </Text>
           <InputData
-           title='OTP'
-            // title1='Password'
+           inputTitle={inputTitle}
+           inputTitle1={inputTitle1}
+           inputTitle2={inputTitle2}
              sign={false} 
              request={false}
              />

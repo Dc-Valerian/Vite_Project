@@ -6,7 +6,15 @@ const SignIn = () => {
   return (
     <div>
         <Main>
-        <Card buttontitle='SignIn' title='Sign In' onClick={()=>{
+        <Card 
+        buttontitle='SignIn' 
+        title='Sign In'
+        inputTitle="Email"
+        inputTitle1="Password"
+        inputTitle2="ConfirmPassword"
+        sign={true}
+        request={false}
+         onClick={()=>{
             console.log("Valerian");
         }}/>
         </Main>

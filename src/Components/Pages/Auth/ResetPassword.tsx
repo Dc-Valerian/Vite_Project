@@ -6,7 +6,15 @@ const ResetPassword = () => {
   return (
     <div>
         <Main>
-        <Card buttontitle='ResetPassword' title='Reset Password' onClick={()=>{
+        <Card 
+        buttontitle='ResetPassword'
+         title='Reset Password'
+         inputTitle="Email"
+         inputTitle1="Password"
+         inputTitle2="Confirm Password"
+         sign={false}
+         request={false}
+          onClick={()=>{
             console.log("Valerian");
         }}/>
         </Main>

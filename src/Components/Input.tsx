@@ -2,7 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { iInput } from '../types'
 
-const InputData:React.FC<iInput> = ({title,title1,title2,sign,request}) => {
+const InputData:React.FC<iInput> = ({
+    inputTitle,
+    inputTitle1,
+    inputTitle2,
+    sign,
+    request,
+   
+}) => {
 
     // const [sign,setSign] = React.useState(true)
     // const [request,setRequest] = React.useState(false)
@@ -12,16 +19,16 @@ const InputData:React.FC<iInput> = ({title,title1,title2,sign,request}) => {
           <Field>
                 <Form>
                 <Input
-                        placeholder={title}
+                        placeholder={inputTitle}
                         />
                     {
                         sign ?  <Input
-                        placeholder={title1}
+                        placeholder={inputTitle1}
                         /> :null
                     }
                     {
                         request ?  <Input
-                        placeholder={title2}
+                        placeholder={inputTitle2}
                         /> :null
                     }
                 </Form>
