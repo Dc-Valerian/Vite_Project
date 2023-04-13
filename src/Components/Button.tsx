@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import { iButton } from '../types'
 
-const Button = () => {
+
+const Button:React.FC<iButton> = ({title,c,bg}) => {
   return (
     <div>
-        <Main bg='red' c='black'>
+        <Main bg={bg} c={c}>
             <Text>
-                Button
+                {title}
             </Text>
         </Main>
     </div>
@@ -17,18 +19,18 @@ export default Button
 
 const Text = styled.div`
 font-weight: bold;
-
 `
 
 const Main = styled.div<
 {bg:string, c:string}
 >`
 width: 120px;
-height: 80px;
+height: 50px;
 background-color: ${({bg})=> bg} ;
 color:${({c})=>c};
 border-radius:3px;
-align-items:center;
+display: flex;
+align-items: center;
 justify-content:center;
 transition:all 350ms;
 
